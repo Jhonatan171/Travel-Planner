@@ -1,13 +1,210 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Travel Planner</title>
-    <link rel="stylesheet" href="css/styles.css"> 
-
+    <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
-    
+    <header>
+        <div class="logo">
+            <span>Icono</span>
+            <div class="titulo-logo">
+                <p>Travel Planner</p>
+                <p>Organiza tu aventura</p>
+            </div>
+        </div>
+
+        <div class="header-action">
+            <input type="search" placeholder="Buscar viajes, destinos o aventuras">
+            <span>🔔</span>
+            <div class="user-info">
+                <span>Avatar</span>
+                <p>Jhonatan Guevara Vasquez</p>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#mis-viajes">Mis viajes</a></li>
+                <li><a href="#itinerario">Itinerario</a></li>
+                <li><a href="#checklist">Checklist</a></li>
+                <li><a href="#configuracion">Configuración</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="section-action">
+            <div>
+                <h1>Mis viajes 🧳</h1>
+                <p>Aquí puedes ver y administrar todos tus viajes</p>
+            </div>
+            <button>+ Nuevo viaje</button>
+        </div>
+        <section class="grid">
+            <article class="card">
+                <div class="card-imagen">
+                    <img src="#" alt="Viaje a Cusco">
+                    <span>Próximo</span>
+                    <button>⋮</button>
+                </div>
+                <div class="card-body">
+                    <h2>Cusco, Perú</h2>
+                    <p>12 de agosto del 2025</p>
+                    <p>Descubre la magia del Cusco</p>
+                    <a href="#">Ver detalles -></a>
+                </div>
+            </article>
+
+            <article class="card">
+                <div class="card-imagen">
+                    <img src="#" alt="Viaje a Francia">
+                    <span>Favorito</span>
+                    <button>⋮</button>
+                </div>
+                <div class="card-body">
+                    <h2>París, Francia</h2>
+                    <p>15 de agosto del 2026</p>
+                    <p>Descubre la magia de Francia</p>
+                    <a href="#">Ver detalles -></a>
+                </div>
+            </article>
+
+            <article class="card">
+                <div class="card-imagen">
+                    <img src="#" alt="Viaje a Indonesia">
+                    <span>Favorito</span>
+                    <button>⋮</button>
+                </div>
+                <div class="card-body">
+                    <h2>Indonesia, Bali</h2>
+                    <p>09 de marzo del 2025</p>
+                    <p>Descubre la magia de Indonesia</p>
+                    <a href="#">Ver detalles -></a>
+                </div>
+            </article>
+
+            <article class="card">
+                <div class="card-imagen">
+                    <img src="#" alt="Viaje a USA">
+                    <span>Próximo</span>
+                    <button>⋮</button>
+                </div>
+                <div class="card-body">
+                    <h2>New York, USA</h2>
+                    <p>16 de noviembre del 2026</p>
+                    <p>La ciudad que no duerme</p>
+                    <a href="#">Ver detalles -></a>
+                </div>
+            </article>
+
+            <article class="card">
+                <div class="card-imagen">
+                    <img src="#" alt="Viaje a España">
+                    <span>Próximo</span>
+                    <button>⋮</button>
+                </div>
+                <div class="card-body">
+                    <h2>Barcelona, España</h2>
+                    <p>31 de diciembre del 2024</p>
+                    <p>Arquitectura impresionante</p>
+                    <a href="#">Ver detalles -></a>
+                </div>
+            </article>
+
+            <article class="card">
+                <div class="card-imagen">
+                    <img src="#" alt="Viaje a Chile">
+                    <span>Próximo</span>
+                    <button>⋮</button>
+                </div>
+                <div class="card-body">
+                    <h2>Patagonia, Chile</h2>
+                    <p>30 de marzo del 2027</p>
+                    <p>Una nueva aventura</p>
+                    <a href="#">Ver detalles -></a>
+                </div>
+            </article>
+        </section>
+        <aside>
+            <div class="sidebar-card">
+                <img src="#" alt="Imagen de viajes">
+                <h2>Bienvenido, Jhonatan</h2>
+                <p>planifica, organiza y disfruta cada momento de tu viaje </p>
+            </div>
+            <div class="sidebar-card">
+                <ul>
+                    <li>
+                        <span class="stat-label">Viajes</span>
+                        <span class="stat-value">5</span>
+                    </li>
+                    <li>
+                        <span class="stat-label">Próximos viajes</span>
+                        <span class="stat-value">2</span>
+                    </li>
+                    <li>
+                        <span class="stat-label">Países visitados</span>
+                        <span class="stat-value">8</span>
+                    </li>
+                    <li>
+                        <span class="stat-label">Favoritos</span>
+                        <span class="stat-value">3</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="sidebar-card">
+                <img src="#" alt="imagen de un paisaje">
+                <h2>¿Listo para tu próxima aventura?</h2>
+                <p>Explora nuevos destinos y crea nuevos recuerdos</p>
+                <button>+ Nuevo Viaje</button>
+
+            </div>
+        </aside>
+        <form action="nuevo-viaje">
+            <h2>Nuevo viaje</h2>
+            <div class="form-group">
+                <label for="destino">Destino</label>
+                <input type="text" id="destino" name="destino">
+
+            </div>
+            <div class="form-row">
+
+                <div class="form-group">
+                    <label for="fecha-inicio">Fecha de inicio</label>
+                    <input type="date" id="fecha-inicio" name="fecha-inicio">
+
+                </div>
+                <div class="form-group">
+                    <label for="fecha-fin">Fecha de fin</label>
+                    <input type="date" id="fecha-fin" name="fecha-fin">
+                </div>
+
+            </div>
+            <div class="form-group">
+                <label for="descripcion">Descripción</label>
+                <textarea name="descripcion" id="descripcion"></textarea>
+            </div>
+
+
+            <button type="submit">Guardar viaje</button>
+
+        </form>
+    </main>
+
+    <footer>
+        <nav>
+            <p>@2025 Travel Planner. Todos los derechos reservados</p>
+            <ul>
+                <li><a href="#terminos">Términos y condiciones</a></li>
+                <li><a href="#politica">Política de privacidad</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+
+    </footer>
+
 </body>
+
 </html>
